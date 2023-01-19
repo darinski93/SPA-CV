@@ -1,0 +1,182 @@
+.container {
+  position: center;
+  width: 50%;
+  height: 50vh;
+  /* full screen height */
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+
+.post {
+  width: 400px;
+  background-color: #fff59d;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  border: solid 5px rgb(4, 3, 3);
+  margin: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  max-width: 600px;
+  animation: pop 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  /* Keeps the final state after animation */
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 5em;
+  line-height: 2.3em;
+  background: hsla(67, 95%, 95%, 1);
+
+}
+
+@keyframes pop {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(50);
+    opacity: 1;
+  }
+}
+
+.mainPP {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  white-space: wrap;
+  word-wrap: break-word;
+  animation:
+    typing 1.5s steps(40, end);
+
+
+}
+
+.resume-home {
+
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+
+  border: 1px solid black;
+
+
+}
+
+
+
+
+.linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 60%;
+  font-size: 1.0rem;
+
+
+
+}
+
+.linkedin-icon:hover {
+  background-color: #05a54d;
+}
+
+.github-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 60%;
+  font-size: 1.0rem;
+
+}
+
+.github-icon:hover {
+  background-color: #05a54d;
+}
+
+.email-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 60%;
+  font-size: 1.0rem;
+
+}
+
+.email-icon:hover {
+  background-color: #05a54d;
+}
+
+/* Add some padding and hover effects */
+.linkedin-icon,
+.github-icon,
+.email-icon {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.linkedin-icon:hover,
+.github-icon:hover,
+.email-icon:hover {
+  transform: scale(1.1);
+}
+
+.icons-home {
+  display: flex;
+  position: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 25em;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3px, 44fr));
+  grid-column-gap: -1px;
+}
+
+
+
+.telephone {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.telephone-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: auto;
+  margin-top: 20px;
+}
+
+.phone-class {
+  font-size: 18px;
+  margin-top: 20px;
+}
